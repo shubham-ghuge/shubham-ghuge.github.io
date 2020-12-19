@@ -34,7 +34,11 @@ body {
   font-family: var(--primary-font);
 }
 nav {
+  width: 100vw;
+  position: fixed;
+  bottom: 0%;
   display: flex;
+  justify-content: center;
   background-color: #fff;
 }
 nav li {
@@ -47,9 +51,12 @@ nav li {
   flex-direction: column;
 }
 nav li a img{
-    height: 40px;
+    height: 30px;
 }
 nav li a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     color: var(--black);
     font-size: .8rem;
 }
@@ -74,7 +81,7 @@ header img{
   height: 60px;
 }
 main{
-    height: 90vh;
+    height: 80vh;
     display: grid;
     grid-template-rows: repeat(2,50%);
     grid-template-columns: repeat(2,50%);
