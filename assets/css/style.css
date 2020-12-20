@@ -247,7 +247,8 @@ nav li a:focus-within::after {
 }
 .intro p {
   margin: 0.3rem 0 1rem;
-  font-size: var(--fontx);
+  font-size: 1rem;
+  font-weight: 600;
 }
 .img-wrap {
   position: relative;
@@ -326,6 +327,7 @@ flex-direction: column;
 .contact-form input{
   display: block;
   margin: 1rem 0 0;
+  padding: .5rem;
   width: 80vw;
   font-size: var(--fontx);
   font-weight: 600;
@@ -334,7 +336,7 @@ flex-direction: column;
   display: block;
   resize: none;
   border-radius: 5px;
-  width: 78vw;
+  width: 80vw;
   height: 15vh;
   padding: .5rem .5rem 0;
   margin: 1rem 0 1rem;
