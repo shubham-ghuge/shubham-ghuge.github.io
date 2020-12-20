@@ -22,7 +22,12 @@
     <!-- style sheets -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body onload="loader()">
+    <div class="loader" id="loader">
+      <span class="animate__animated animate__flash animate__infinite animate__slow"></span>
+      <span class="animate__animated animate__flash animate__infinite animate__slow animate__delay-2s"></span>
+      <span class="animate__animated animate__flash animate__infinite animate__slow animate__delay-3s"></span>
+    </div>
    <header>
     <img src="./assets/img/temp-memoji.png" alt="user emoji" />
     <ul>
@@ -71,5 +76,6 @@
         >
       </li>
     </nav>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

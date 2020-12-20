@@ -8,7 +8,28 @@
   --fontxxx: 4.5rem;
   --swiper-theme-color: #20a1ff !important;
 }
-
+/* loader */
+.loader{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader span::after{
+  content: '';
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+  color: #fff;
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+}
 /* resetting */
 *,
 *::before,
@@ -55,7 +76,7 @@ nav {
   position: fixed;
   bottom: 0%;
   display: flex;
-  z-index: 999;
+  z-index: 998;
   justify-content: center;
   background-color: #fff;
 }
