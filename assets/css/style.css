@@ -131,10 +131,13 @@ nav li a:focus-within::after {
 .m-auto {
   margin: auto;
 }
+.mx-2{
+  margin: 1rem 0;
+}
 .heading {
   position: relative;
   text-align: center;
-  font-size: var(--fontxx);
+  font-size: 1.7rem;
 }
 .heading::after {
   content: "";
