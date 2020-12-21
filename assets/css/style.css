@@ -66,7 +66,8 @@ header {
 }
 header img {
   align-self: center;
-  height: 50px;
+  height: 40px;
+  margin: 0 .5rem;
 }
 header ul {
   align-self: center;
