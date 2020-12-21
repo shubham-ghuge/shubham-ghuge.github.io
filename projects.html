@@ -45,7 +45,21 @@
     </div>
     <header>
       <img src="./assets/img/temp-memoji.png" alt="user emoji" />
-      <ul>
+      <ul class="d-none header-nav">
+        <li>
+          <a href="./index.html" class="nav-link"><i class='bx bx-home-heart'></i>Home</a>
+        </li>
+        <li>
+          <a href="./projects.html" class="nav-link"><i class='bx bxs-rocket active' ></i>projects</a>
+        </li>
+        <li>
+          <a href="./contact.html" class="nav-link"><i class='bx bx-user-plus' ></i>contact</a>
+        </li>
+        <li>
+          <a href="./blogs.html" class="nav-link"><i class='bx bx-pen' ></i>blogs</a>
+        </li>
+      </ul>
+      <ul class="d-show">
         <li>
           <a href="https://www.github.com/shubham-ghuge"
             ><img
@@ -61,18 +75,54 @@
         <h1 class="heading">Projects & skills</h1>
         <h2 class="mx-2 subheading">skills :</h2>
         <p class="uppercase">
-          <span class="d-none">HTML5</span><span><img src="./assets/img/icons/icons8-html-5.svg" alt="html logo" class="icon"></span>
-          <span class="d-none">CSS3</span><span><img src="./assets/img/icons/icons8-css3-50.png" alt="css logo" class="icon"></span>
-          <span class="d-none">bootstrap4</span><span><img src="./assets/img/icons/icons8-bootstrap.svg" alt="bootstrap logo" class="icon"></span>
-          <span class="d-none">javascript</span><span><img src="./assets/img/icons/icons8-javascript.svg" alt="js logo" class="icon"></span>
-          <span class="d-none">GSAP</span><span><img src="./assets/img/icons/gsap.svg" alt="gsap logo" class="icon"></span>
-          <span class="d-none">java</span><span><img src="./assets/img/icons/icons8-java.svg" alt="java logo" class="icon"></span>
-          <span class="d-none">php</span><span><img src="./assets/img/icons/icons8-php-logo.svg" alt="php logo" class="icon"></span>
-          <span class="d-none">git</span><span><img src="./assets/img/icons/icons8-git.svg" alt="git logo" class="icon"></span>
-          <span class="d-none">figma</span><span><img src="./assets/img/icons/icons8-figma.svg" alt="figma logo" class="icon"></span>
-          <span class="d-none">vscode</span><span><img src="./assets/img/icons/icons8-visual-studio-code-2019.svg" alt="vscode logo" class="icon"></span>
-          <span class="d-none">mysql</span><span><img src="./assets/img/icons/icons8-mysql-logo.svg" alt="mysql logo" class="icon"></span>
-          <span class="d-none">netlify</span><span><img src="./assets/img/icons/netlify-logo.png" alt="mysql logo" class="icon"></span>
+          <span class="d-none">HTML5</span>
+          <span>
+            <img src="./assets/img/icons/icons8-html-5.svg" alt="html logo" class="icon">
+          </span>
+          <span class="d-none">, CSS3</span>
+          <span>
+            <img src="./assets/img/icons/icons8-css3-50.png" alt="css logo" class="icon">
+          </span>
+          <span class="d-none">, bootstrap4</span>
+          <span>
+            <img src="./assets/img/icons/icons8-bootstrap.svg" alt="bootstrap logo" class="icon">
+          </span>
+          <span class="d-none">, javascript</span>
+          <span>
+            <img src="./assets/img/icons/icons8-javascript.svg" alt="js logo" class="icon">
+          </span>
+          <span class="d-none">, GSAP</span>
+          <span>
+            <img src="./assets/img/icons/gsap.svg" alt="gsap logo" class="icon">
+          </span>
+          <span class="d-none">, java</span>
+          <span>
+            <img src="./assets/img/icons/icons8-java.svg" alt="java logo" class="icon">
+          </span>
+          <span class="d-none">, PHP </span>
+          <span>
+            <img src="./assets/img/icons/icons8-php-logo.svg" alt="php logo" class="icon">
+          </span>
+          <span class="d-none">, git</span>
+          <span>
+            <img src="./assets/img/icons/icons8-git.svg" alt="git logo" class="icon">
+          </span>
+          <span class="d-none">, figma</span>
+          <span>
+            <img src="./assets/img/icons/icons8-figma.svg" alt="figma logo" class="icon">
+          </span>
+          <span class="d-none">, vscode</span>
+          <span>
+            <img src="./assets/img/icons/icons8-visual-studio-code-2019.svg" alt="vscode logo" class="icon">
+          </span>
+          <span class="d-none">, mysql</span>
+          <span>
+            <img src="./assets/img/icons/icons8-mysql-logo.svg" alt="mysql logo" class="icon">
+          </span>
+          <span class="d-none">netlify</span>
+          <span>
+            <img src="./assets/img/icons/netlify-logo.png" alt="mysql logo" class="icon">
+          </span>
         </p>
       </div>
       <section class="personal-projects">
@@ -128,7 +178,7 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
-      <section class="neog">
+      <section class="neog animate__animated animate__fadeInUp">
         <h2 class="subheading">NEOG CAMP Projects:</h2>
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -224,21 +274,23 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
-      <section class="extra"></section>
+      <section class="extra d-none"></section>
     </main>
     <nav>
-      <li>
-        <a href="./index.html"><i class='bx bx-home-heart'></i>Home</a>
-      </li>
-      <li>
-        <a href="./projects.html"><i class='bx bxs-rocket' ></i>projects</a>
-      </li>
-      <li>
-        <a href="./contact.html"><i class='bx bx-user-plus' ></i>contact</a>
-      </li>
-      <li>
-        <a href="./blogs.html"><i class='bx bx-pen' ></i>blogs</a>
-      </li>
+      <ul>
+        <li>
+          <a href="./index.html"><i class='bx bx-home-heart'></i>Home</a>
+        </li>
+        <li>
+          <a href="./projects.html"><i class='bx bxs-rocket' ></i>projects</a>
+        </li>
+        <li>
+          <a href="./contact.html"><i class='bx bx-user-plus' ></i>contact</a>
+        </li>
+        <li>
+          <a href="./blogs.html"><i class='bx bx-pen' ></i>blogs</a>
+        </li>
+      </ul>
     </nav>
     <!--  -->
     <script
@@ -256,6 +308,12 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+      }
       });
     </script>
     <script src="./assets/js/app.js"></script>

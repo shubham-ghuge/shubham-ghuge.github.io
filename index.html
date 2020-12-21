@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="title" content="shubham ghuge | Web Developer">
+    <meta name="description" content="CS Undergrad who is currently living in india, I enjoy making responsive and good looking websites.If you want to build one feel free to reach out to me.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shubham-ghuge.github.io/">
+    <meta property="og:title" content="shubham ghuge | Web Developer">
+    <meta property="og:description" content="CS Undergrad who is currently living in india, I enjoy making responsive and good looking websites.If you want to build one feel free to reach out to me.">
+    <meta property="og:image" content="./assets/img/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shubham-ghuge.github.io/">
+    <meta property="twitter:title" content="shubham ghuge | Web Developer">
+    <meta property="twitter:description" content="CS Undergrad who is currently living in india, I enjoy making responsive and good looking websites.If you want to build one feel free to reach out to me.">
+    <meta property="twitter:image" content="./assets/img/profile.png">
+    <meta name="Keywords"
+        content="shubham ghuge,shubham subhash ghuge,shubham-ghuge,shubham-ghuge github.io,shubham ghuge portfolio,web developer portfolio,freelancer,freelancer portfolio,web devlopment portfolio,indian web developer,cs undergaduate,mumbai web developer">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shubham Ghuge|Portfolio</title>
     <!-- preprocessing -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preload" href="./assets/img/PicsArt_12-19-06.43.54.png" as="image" media="(min-width: 900px)">
+    <link rel="preload" href="./assets/img/profile.png" as="image" media="(min-width: 900px)">
     <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500&display=swap"
@@ -31,8 +49,26 @@
     </div>
     <header>
       <img src="./assets/img/temp-memoji.png" alt="user emoji" />
-      <ul>
-        <li><a href="https://www.twitter.com/_shubham_ghuge_"><img src="./assets/img/icons/icons8-twitter.svg"  alt=""></a></li>
+      <ul class="d-none header-nav">
+        <li>
+          <a href="./index.html" class="nav-link"><i class='bx bxs-home-heart active'></i>Home</a>
+        </li>
+        <li>
+          <a href="./projects.html" class="nav-link"><i class='bx bx-rocket' ></i>projects</a>
+        </li>
+        <li>
+          <a href="./contact.html" class="nav-link"><i class='bx bx-user-plus' ></i>contact</a>
+        </li>
+        <li>
+          <a href="./blogs.html" class="nav-link"><i class='bx bx-pen' ></i>blogs</a>
+        </li>
+      </ul>
+      <ul class="d-show">
+        <li>
+          <a href="https://www.twitter.com/_shubham_ghuge_">
+            <img src="./assets/img/icons/icons8-twitter.svg"  alt="twitter">
+          </a>
+        </li>
       </ul>
     </header>
     <main class="home">
@@ -50,29 +86,27 @@
       <section class="img-wrap">
         <img
           class="portfolio-img"
-          src="./assets/img/PicsArt_12-19-06.43.54.png"
+          src="./assets/img/profile.png"
           alt="shubham ghuge image"
         />
       </section>
     </main>
     <!-- scripts -->
     <nav>
-      <li>
-        <a href="#" class="active"><i class='bx bxs-home-heart'></i>Home</a>
-        <!-- <i class='bx bx-home-heart' ></i> -->
-      </li>
-      <li>
-        <a href="./projects.html"><i class='bx bx-rocket' ></i>projects</a>
-        <!-- <i class='bx bxs-rocket' ></i> -->
-      </li>
-      <li>
-        <a href="./contact.html"><i class='bx bx-user-plus' ></i>contact</a>
-        <!-- <i class='bx bxs-user-plus' ></i> -->
-      </li>
-      <li>
-        <a href="./blogs.html"><i class='bx bx-pen' ></i>blogs</a>
-        <!-- <i class='bx bxs-pen' ></i> -->
-      </li>
+      <ul>
+        <li>
+          <a href="#" class="active"><i class='bx bxs-home-heart'></i>Home</a>
+        </li>
+        <li>
+          <a href="./projects.html"><i class='bx bx-rocket' ></i>projects</a>
+        </li>
+        <li>
+          <a href="./contact.html"><i class='bx bx-user-plus' ></i>contact</a>
+        </li>
+        <li>
+          <a href="./blogs.html"><i class='bx bx-pen' ></i>blogs</a>
+        </li>
+      </ul>
     </nav>
     <script src="./assets/js/app.js"></script>
   </body>
