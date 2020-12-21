@@ -27,8 +27,16 @@
   margin: 0 10px;
   color: #fff;
   display: block;
-  background-color: #fff;
   border-radius: 50%;
+}
+.loader span:nth-child(1)::after{
+  background: linear-gradient(red,orange);
+}
+.loader span:nth-child(2)::after{
+  background: linear-gradient(#f00,purple);
+}
+.loader span:nth-child(3)::after{
+  background: linear-gradient(#f00,blue);
 }
 /* resetting */
 *,
