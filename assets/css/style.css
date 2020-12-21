@@ -81,7 +81,7 @@ nav {
   background-color: #fff;
 }
 nav li {
-  margin: 0.5rem 1rem;
+  margin: 0.4rem .7rem 0rem;
   padding: 0 0.5rem;
   display: flex;
   text-align: center;
@@ -100,11 +100,14 @@ nav li a {
   color: var(--black);
   font-size: 0.8rem;
 }
+nav li a i{
+  font-size: 1.8rem;
+}
 nav li a:focus-within::after {
   border-radius: 50%;
   border-bottom: 5px solid var(--blue);
 }
-.active::after {
+/* .active::after {
   position: absolute;
   content: "";
   bottom: -10%;
@@ -116,7 +119,7 @@ nav li a:focus-within::after {
   width: 5px;
   display: block;
   background-color: var(--blue);
-}
+} */
 /* utility classes */
 .bg-white {
   background-color: #fff;
