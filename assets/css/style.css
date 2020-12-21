@@ -327,7 +327,7 @@ nav li a:focus-within::after {
   width: 100%;
 }
 .swiper-slide img {
-  height: 100px;
+  height: 150px;
   display: block;
   margin: 2rem auto 0;
 }
