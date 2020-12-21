@@ -307,6 +307,10 @@ nav li a:focus-within::after {
 .swiper-button-prev {
   top: 40%;
 }
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  outline: none;
+}
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.8rem;
