@@ -217,6 +217,10 @@ nav li a:focus-within::after {
   display: inline !important;
   margin: 0 !important;
 }
+.icon:hover{
+  transition: all .5s ease-in;
+  transform: scale(1.2);
+}
 .uppercase {
   text-transform: capitalize;
 }
