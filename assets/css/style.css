@@ -3,6 +3,9 @@
   --heading-font: "Playfair Display", serif;
   --blue: #1266f1;
   --black: #030303;
+  --white:#fff;
+  /* --black: #fff;
+  --white: #030303; */
   --fontx: 1.125rem;
   --fontxx: 2.25rem;
   --fontxxx: 4.5rem;
@@ -13,8 +16,8 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color:var(--white);
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -25,7 +28,7 @@
   height: 30px;
   width: 30px;
   margin: 0 10px;
-  color: #fff;
+  color:var(--white);
   display: block;
   border-radius: 50%;
 }
@@ -62,7 +65,7 @@ a {
 }
 /* element styling */
 body {
-  color: #fff;
+  color:var(--white);
   background-color: var(--black);
   font-family: var(--primary-font);
   overflow-x: hidden;
@@ -88,7 +91,7 @@ nav {
   display: flex;
   z-index: 998;
   justify-content: center;
-  background-color: #fff;
+  background-color:var(--white);
 }
 nav ul {
   display: flex;
@@ -131,7 +134,7 @@ nav li a:focus-within::after {
   display: block;
 }
 .bg-white {
-  background-color: #fff;
+  background-color:var(--white);
 }
 .rounded {
   border-radius: 50%;
@@ -161,7 +164,7 @@ nav li a:focus-within::after {
   text-transform: capitalize;
 }
 .cta {
-  background-color: #fff;
+  background-color:var(--white);
   color: var(--black);
   width: 40vw;
   cursor: pointer;
@@ -177,7 +180,7 @@ nav li a:focus-within::after {
 .cta:focus,
 .cta:hover {
   outline: none;
-  color: #fff;
+  color:var(--white);
   background: -webkit-linear-gradient(to left, #32dfce, #6f54f8);
   background: linear-gradient(to left, #32dfce, #6f54f8);
 }
@@ -186,14 +189,14 @@ nav li a:focus-within::after {
   font-weight: 600;
   padding: 0.5rem 2rem;
   border-radius: 5px;
-  color: #fff;
-  background-color: #000;
-  border: 1px solid #fff;
+  color:var(--white);
+  background-color: var(--black);
+  border: 1px solidvar(--white);
 }
 .cta-2:nth-child(2) {
   color: #030303;
   padding: 0.5rem 1rem;
-  background-color: #fff;
+  background-color:var(--white);
   border: 1px solid #030303;
 }
 .wrap {
@@ -215,42 +218,41 @@ nav li a:focus-within::after {
   display: none;
 }
 .extra {
+  display: block;
   height: 60px;
   width: 100vw;
 }
 .blog-card {
-  height: 300px;
+  border: 1px solid rgb(51, 51, 51);
   border-radius: 10px;
   padding: 1rem 0.5rem;
-  display: grid;
-  grid-template-rows: 40% 20% 10% 30%;
-  background-color: #fff;
-  color: #000;
-  box-shadow: 1px 1px 5px 1px #8a8a8a;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+.blog-card:hover{
+  background-color: #181717;
 }
 .blog-card .img {
+  height: 100px;
+  margin: 0 0 0.5rem 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  grid-row: 1/2;
   background-image: url(../img/pexels-pixabay-267350.jpg);
   background-size: cover;
 }
 .blog-card a {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 800;
-  line-height: 1;
-  color: #000;
-  grid-row: 2/3;
-}
-.blog-card h3 {
-  grid-row: 3/4;
+  line-height: 1.9rem;
+  color: var(--white);
 }
 .blog-card p {
-  grid-row: 4/5;
+  margin: .5rem 0 0 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-line-clamp: 3; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
 /* sections */
@@ -280,7 +282,7 @@ nav li a:focus-within::after {
   -webkit-text-fill-color: transparent;
   font-size: var(--fontxx);
 }
-.intro p {
+.intro h2 {
   margin: 0.3rem 0 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -420,7 +422,7 @@ nav li a:focus-within::after {
     text-transform: capitalize;
     font-size: 1.125rem;
     font-weight: 500;
-    color: #fff;
+    color:var(--white);
     vertical-align: middle;
   }
   .nav-link i {
@@ -439,7 +441,7 @@ nav li a:focus-within::after {
     font-weight: 500;
     font-size: var(--fontxx);
   }
-  .intro p {
+  .intro h2 {
     margin: 0.3rem 1rem 1rem;
     font-size: var(--fontx);
     font-weight: 400;
@@ -489,5 +491,25 @@ nav li a:focus-within::after {
   .personal-projects h2,
   .neog h2 {
     margin: 1rem 0rem;
+  }
+  .blog-card {
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .blog-card .img {
+    height: 30vh;
+    width: 30vw;
+    margin: 0 1rem 0.5rem 0;
+  }
+  .blog-card a {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    color: var(--white);
+  }
+  .blog-card p {
+    font-size: 1.3rem;
+    margin: .5rem 1rem 0 0;
   }
 }

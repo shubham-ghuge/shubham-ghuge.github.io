@@ -68,9 +68,9 @@
       </section>   
       <section class="p-1 contact-form">
         <form name="contact" method="POST" data-netlify="true">
-            <input type="text" name="name" placeholder="enter your name" />
-            <input type="email" name="email" placeholder="enter your email" />
-            <textarea name="message" placeholder="enter your message"></textarea>
+            <input type="text" name="name" placeholder="enter your name" required/>
+            <input type="email" name="email" placeholder="enter your email" required/>
+            <textarea name="message" placeholder="enter your message" required></textarea>
             <button type="submit" class="cta">Send</button>
         </form>
       </section>     
@@ -79,7 +79,7 @@
     <nav>
       <ul>
         <li>
-          <a href="./index.html" class="active"><i class='bx bx-home-heart'></i>Home</a>
+          <a href="./index.html"><i class='bx bx-home-heart'></i>Home</a>
         </li>
         <li>
           <a href="./projects.html"><i class='bx bx-rocket' ></i>projects</a>
