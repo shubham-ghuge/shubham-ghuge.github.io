@@ -400,8 +400,10 @@ nav li a:focus-within::after {
   font-size: var(--fontx);
   font-weight: 600;
   border-radius: 5px;
+  border: none;
 }
 .contact-form textarea {
+  border: none;
   display: block;
   resize: none;
   border-radius: 5px;
@@ -417,7 +419,11 @@ nav li a:focus-within::after {
   font-size: var(--fontx);
   font-weight: 400;
 }
-
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline: none;
+  border: 2px solid #20a1ff;
+}
 /* media queries */
 @media all and (min-width: 991px) {
   :root {
