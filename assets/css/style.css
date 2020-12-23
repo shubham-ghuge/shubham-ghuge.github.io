@@ -274,9 +274,13 @@ nav li a:focus-within::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 70vh;
   width: 100vw;
-  padding: 1rem;
+}
+.thank-you h1{
+  margin: 0;
+  font-size: 1.7rem;
 }
 /* home page */
 .home {
@@ -534,5 +538,8 @@ nav li a:focus-within::after {
   .blog-card p {
     font-size: 1.3rem;
     margin: .5rem 1rem 0 0;
+  }
+  .thank-you h1{
+    font-size: 3rem;
   }
 }
