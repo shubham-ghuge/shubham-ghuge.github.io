@@ -191,13 +191,22 @@ nav li a:focus-within::after {
   border-radius: 5px;
   color:var(--white);
   background-color: var(--black);
-  border: 1px solidvar(--white);
+  border: 1px solid var(--white);
+}
+.cta-2:hover{
+  color: var(--black);
+  background-color: var(--white);
 }
 .cta-2:nth-child(2) {
   color: #030303;
   padding: 0.5rem 1rem;
   background-color:var(--white);
   border: 1px solid #030303;
+}
+.cta-2:nth-child(2):hover{
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--white);
 }
 .wrap {
   padding: 0.5rem 1rem;
