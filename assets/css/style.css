@@ -269,6 +269,15 @@ nav li a:focus-within::after {
   -webkit-box-orient: vertical;
 }
 /* sections */
+/* thank you */
+.thank-you{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+  padding: 1rem;
+}
 /* home page */
 .home {
   height: 80vh;
