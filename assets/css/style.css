@@ -275,11 +275,10 @@ nav li a:focus-within::after {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 70vh;
   width: 100vw;
 }
 .thank-you h1{
-  margin: 0;
+  margin: 6rem 0 0 0;
   font-size: 1.7rem;
 }
 /* home page */
