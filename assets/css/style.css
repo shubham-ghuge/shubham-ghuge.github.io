@@ -36,19 +36,19 @@
 
 .loader span:nth-child(1)::after {
   background: linear-gradient(red, orange);
-  animation: blink .3s infinite ease-in-out;
+  animation: blink .7s infinite ease-in-out;
 }
 .loader span:nth-child(2)::after {
   background: linear-gradient(#f00, purple);
   opacity: 0;
-  animation: blink .3s infinite ease-in-out;
-  animation-delay: .3s;
+  animation: blink .7s infinite ease-in-out;
+  animation-delay: .7s;
 }
 .loader span:nth-child(3)::after {
   background: linear-gradient(#f00, blue);
   opacity: 0;
-  animation: blink .3s infinite ease-in-out;
-  animation-delay: .6s;
+  animation: blink .7s infinite ease-in-out;
+  animation-delay: .14s;
 }
 @keyframes blink{
   0%{
