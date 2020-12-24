@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-# MY portfolio
-=======
-# MY portfolio
->>>>>>> 05494efa232f86490e2bc27de781614a495e1146
+https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white
