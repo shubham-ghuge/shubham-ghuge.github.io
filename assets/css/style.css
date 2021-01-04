@@ -31,24 +31,20 @@
   color:var(--white);
   display: block;
   border-radius: 50%;
-  transition: ease-in;
+  backdrop-filter: blur(10px);
 }
 
 .loader span:nth-child(1)::after {
   background: linear-gradient(red, orange);
-  animation: blink .7s infinite ease-in-out;
+  animation: blink 1s ease-in-out infinite;
 }
 .loader span:nth-child(2)::after {
   background: linear-gradient(#f00, purple);
-  opacity: 0;
-  animation: blink .7s infinite ease-in-out;
-  animation-delay: .7s;
+  animation: blink 1s ease-in-out .33s infinite;
 }
 .loader span:nth-child(3)::after {
   background: linear-gradient(#f00, blue);
-  opacity: 0;
-  animation: blink .7s infinite ease-in-out;
-  animation-delay: .14s;
+  animation: blink 1s ease-in-out .66s infinite;
 }
 @keyframes blink{
   0%{
