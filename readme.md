@@ -1,4 +1,6 @@
-# Visit My portfolio 
-![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) https://shubham-ghuge.github.io
-
-### Leave a message [here](https://shubham-ghuge.github.io/contact.html) and ⭐ this repo if you like the design  
+# v2.0.0
+social links
+https://www.instagram.com/shubhamghuge
+https://www.twitter.com/_shubham_ghuge_
+https://www.github.com/shubham-ghuge
+https://www.linkedin.com/in/shubham-ghuge-aa3350188/
