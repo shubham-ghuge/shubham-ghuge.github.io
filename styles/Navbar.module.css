@@ -1,0 +1,33 @@
+.navbar {
+  --nav-height: 3.125rem;
+  background-color: var(--purple);
+  margin: auto auto 1rem;
+  height: var(--nav-height);
+  width: 95vw;
+  position: fixed;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-content: center;
+  border-radius: var(--nav-height);
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_items {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.icon {
+  font-size: 1rem !important;
+  margin-left: 0.25rem;
+  color: var(--blue);
+}

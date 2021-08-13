@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.icon {
+  background-color: var(--blue);
+  margin-left: 0.5rem;
+  padding-top: .20rem;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 20px;
+}
