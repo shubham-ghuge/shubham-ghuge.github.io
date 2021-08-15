@@ -1,0 +1,68 @@
+.extra_margin {
+  margin-left: 1rem;
+}
+.wrapper {
+  margin: auto;
+  display: grid;
+  place-content: center;
+  height: 70vh;
+}
+.card_container {
+  color: var(--theme-color);
+  display: flex;
+  overflow-y: scroll;
+}
+.card {
+  --card-height: 20vh;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #0e1a2d;
+}
+.card figure {
+  height: 35vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.thumbnail {
+  align-self: center;
+  position: relative;
+  height: var(--card-height);
+  border-radius: 50%;
+  width: var(--card-height);
+}
+.thumbnail img {
+  border-radius: 50%;
+}
+.card figcaption {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+.card h4 {
+  font-size: var(--fsz-2);
+}
+.card p {
+  margin-top: 0.2rem;
+  color: var(--blue);
+}
+.links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.links a {
+  color: var(--grey);
+  display: flex;
+}
+.links a:last-child {
+  margin-left: 0.5rem;
+}
+.links svg {
+  margin-left: 0.2rem;
+  font-size: 1rem;
+}

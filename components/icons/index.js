@@ -45,5 +45,25 @@ function Zap({ ...args }) {
         <svg width="1em" height="1em" {...args} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
     )
 }
+function Home({ ...args }) {
+    return (
+        <svg width="1em" height="1em" {...args} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+    )
+}
+function ExternalLinks({ ...args }) {
+    return (
+        <svg width="1em" height="1em" {...args} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+    )
+}
+function Arrow({ ...args }) {
+    return (
+        <svg width="1em" height="1em" {...args} viewBox="0 0 24 24" fill="none">
+            <g id="arrow-right 1">
+                <path id="tail" d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path id="beak" d="M12 5L19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </g>
+        </svg>
 
-export { Linkedin, Twitter, Github, Instagram, Code, Mail, Pen, Tool, Zap }
+    )
+}
+export { Linkedin, Twitter, Github, Instagram, Code, Mail, Pen, Tool, Zap, Home, ExternalLinks, Arrow }

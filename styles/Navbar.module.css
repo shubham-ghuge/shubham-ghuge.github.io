@@ -19,15 +19,30 @@
 }
 .menu_items {
   margin: 0 0.5rem;
+  position: relative;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-transform: capitalize;
   font-size: 0.9rem;
+  color: var(--theme-color);
+}
+.menu_items span {
+  display: none;
+}
+.icon {
+  font-size: 1.25rem !important;
+  margin-inline: 0.5rem;
+  color: var(--grey);
 }
 
-.icon {
-  font-size: 1rem !important;
-  margin-left: 0.25rem;
-  color: var(--blue);
+@media (min-width: 640px) {
+  .menu_items span {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
 }

@@ -1,18 +1,19 @@
 .header {
-  position: fixed;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
+  align-items: center;
   box-sizing: border-box;
+  padding: 1rem;
 }
 .icon {
-  background-color: var(--blue);
   margin-left: 0.5rem;
-  padding-top: .20rem;
-  height: 40px;
-  width: 40px;
-  display: grid;
-  place-content: center;
-  border-radius: 20px;
+}
+.icon svg {
+  color: var(--grey);
+  font-size: 1.5rem;
+  transition: all .3s;
+}
+.icon:hover svg {
+  color: var(--blue);
 }
