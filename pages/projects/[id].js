@@ -1,8 +1,10 @@
 import Head from "next/head";
-import data from "./projects.json";
+import data from "../../data/projects.json";
 import Image from "next/image";
 import styles from "../../styles/Projects.module.css";
 import Link from "next/link";
+import { BiLinkExternal } from "react-icons/bi";
+import { FiGithub } from "react-icons/fi";
 import { IoLogoSass } from "react-icons/io5";
 import { SiMongodb, SiJavascript, SiTypescript, SiReact, SiReactrouter, SiNodeDotJs, SiRedux, SiHtml5, SiCss3 } from "react-icons/si";
 
@@ -20,9 +22,8 @@ export async function getStaticProps({ params }) {
     }
 }
 export default function ProjectDetails({ project }) {
-    const { title, subTitle, img, logo, description, techStack, frontEnd, backEnd } = project || { backEnd: [] };
+    const { title, subTitle, img, logo, description, techStack, frontEnd, backEnd, live } = project;
     const icons = [SiMongodb, SiJavascript, SiReactrouter, SiTypescript, SiReact, SiNodeDotJs, SiRedux, SiHtml5, SiCss3, IoLogoSass];
-
     return (
         <>
             <Head>
@@ -35,7 +36,12 @@ export default function ProjectDetails({ project }) {
                     </div>
                     <div className={styles.project_heading}>
                         <div className={styles.project_details}>
-                            <h2 className="heading">{title}</h2>
+                            <Link href={live} passHref>
+                                <a target="_blank">
+                                    <h2 className="heading">{title}</h2>
+                                    <BiLinkExternal className="icon" />
+                                </a>
+                            </Link>
                             <h3>{subTitle}</h3>
                         </div>
                         <div className={styles.project_logo}>
@@ -45,25 +51,29 @@ export default function ProjectDetails({ project }) {
                     <div className={styles.tech_stack}>
                         <h4>Tech Stack</h4>
                         <div>
-                            {
-                                techStack.map((tech, idx) => {
-                                    const Icon = icons.find(i => i.name === tech)
-                                    return (<Icon key={idx} className="icon" />)
-                                })
-                            }
+                            {techStack.map((tech, idx) => {
+                                const Icon = icons.find(i => i.name === tech)
+                                return (<Icon key={idx} className="icon" />)
+                            })}
                         </div>
                     </div>
                     <p>{description}</p>
-                    <div style={{ display: "flex", marginTop: ".5rem" }}>
-                        {/* {
-                            frontEnd.map((i, idx) => (<Link href={i.live} key={idx} passHref>
-                                <a>
-                                    <div className={styles.project_tech} >
-                                        <Image layout="fill" objectFit="cover" src={`/skills/${i.icon}.svg`} alt="icon" />
-                                    </div>
+                    <div className={styles.project_links}>
+                        <h4>Source Code</h4>
+                        <div>
+                            <Link href={frontEnd} passHref>
+                                <a target="_blank">
+                                    <span>Front End</span>
+                                    <FiGithub className="icon" />
                                 </a>
-                            </Link>))
-                        } */}
+                            </Link>
+                            {backEnd && (<Link href={backEnd}>
+                                <a target="_blank">
+                                    <span>Back End</span>
+                                    <FiGithub className="icon" />
+                                </a>
+                            </Link>)}
+                        </div>
                     </div>
                 </div>
             </main>

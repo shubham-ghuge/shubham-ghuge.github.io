@@ -16,26 +16,9 @@
       "SiCss3",
       "SiJavascript"
     ],
-    "frontEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/farmers-grocery-v1/tree/v2.0.0"
-      },
-      {
-        "icon": "live",
-        "live": "https://farmers-grocery.netlify.app/"
-      }
-    ],
-    "backEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/api-farmers-grocery/tree/v2.0.0"
-      },
-      {
-        "icon": "live",
-        "live": "https://farmers-grocery-v2.herokuapp.com/"
-      }
-    ]
+    "live": "https://farmers-grocery.netlify.app/",
+    "frontEnd": "https://github.com/shubham-ghuge/farmers-grocery-v1/tree/v2.0.0",
+    "backEnd": "https://github.com/shubham-ghuge/api-farmers-grocery/tree/v2.0.0"
   },
   {
     "id": "2",
@@ -53,26 +36,9 @@
       "SiCss3",
       "SiJavascript"
     ],
-    "frontEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/sell-at-farmersGrocery/tree/dev"
-      },
-      {
-        "icon": "live",
-        "live": "https://sellatfarmersgrocery.netlify.app/"
-      }
-    ],
-    "backEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/api-farmers-grocery/tree/v2.0.0"
-      },
-      {
-        "icon": "live",
-        "live": "https://farmers-grocery-v2.herokuapp.com/"
-      }
-    ]
+    "live": "https://sellatfarmersgrocery.netlify.app/",
+    "frontEnd": "https://github.com/shubham-ghuge/sell-at-farmersGrocery/tree/dev",
+    "backEnd": "https://github.com/shubham-ghuge/api-farmers-grocery/tree/v2.0.0"
   },
   {
     "id": "3",
@@ -90,26 +56,9 @@
       "SiHtml5",
       "SiCss3"
     ],
-    "frontEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/real-farmer/tree/dev/src"
-      },
-      {
-        "icon": "live",
-        "live": "https://realfarmer-quiz.netlify.app/"
-      }
-    ],
-    "backEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/real-farmer-backend/tree/dev"
-      },
-      {
-        "icon": "live",
-        "live": "https://realfarmer-quiz.herokuapp.com/"
-      }
-    ]
+    "live": "https://realfarmer-quiz.netlify.app/",
+    "frontEnd": "https://github.com/shubham-ghuge/real-farmer/tree/dev/src",
+    "backEnd": "https://github.com/shubham-ghuge/real-farmer-backend/tree/dev"
   },
   {
     "id": "4",
@@ -128,26 +77,9 @@
       "SiCss3",
       "SiJavascript"
     ],
-    "frontEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/sanvaad/tree/dev"
-      },
-      {
-        "icon": "live",
-        "live": "https://sanvaad.netlify.app/"
-      }
-    ],
-    "backEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/social-media-backend/tree/dev"
-      },
-      {
-        "icon": "live",
-        "live": "https://sanvaad.herokuapp.com/"
-      }
-    ]
+    "live": "https://sanvaad.netlify.app/",
+    "frontEnd": "https://github.com/shubham-ghuge/sanvaad/tree/dev",
+    "backEnd": "https://github.com/shubham-ghuge/social-media-backend/tree/dev"
   },
   {
     "id": "5",
@@ -165,26 +97,9 @@
       "SiCss3",
       "SiJavascript"
     ],
-    "frontEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/liveFarm/tree/dev"
-      },
-      {
-        "icon": "live",
-        "live": "https://livefarm.netlify.app/"
-      }
-    ],
-    "backEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/live-farm-backend/tree/dev"
-      },
-      {
-        "icon": "live",
-        "live": "https://live-farm.herokuapp.com/"
-      }
-    ]
+    "live": "https://livefarm.netlify.app/",
+    "frontEnd": "https://github.com/shubham-ghuge/liveFarm/tree/dev",
+    "backEnd": "https://github.com/shubham-ghuge/live-farm-backend/tree/dev"
   },
   {
     "id": "6",
@@ -194,15 +109,7 @@
     "logo": "/projects/logo/6.svg",
     "description": "This is a component library made with SASS. some of the class titles are inspired from emmet.",
     "techStack": ["SiHtml5", "IoLogoSass", "SiJavascript"],
-    "frontEnd": [
-      {
-        "icon": "github",
-        "live": "https://github.com/shubham-ghuge/component-library/tree/development"
-      },
-      {
-        "icon": "live",
-        "live": "https://cssstack.netlify.app/"
-      }
-    ]
+    "live": "https://cssstack.netlify.app/",
+    "frontEnd": "https://github.com/shubham-ghuge/component-library/tree/development"
   }
 ]

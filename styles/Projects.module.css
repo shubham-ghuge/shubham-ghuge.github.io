@@ -1,3 +1,9 @@
+.wrapper {
+  margin: auto;
+  display: grid;
+  place-content: center;
+  height: 70vh;
+}
 .card_container {
   color: var(--theme-color);
   display: flex;
@@ -5,7 +11,7 @@
 }
 .card {
   --card-height: 20vh;
-  margin: 1rem;
+  margin-right: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: #0e1a2d;
@@ -63,6 +69,7 @@
 .project_container {
   --logo-height: 50px;
   --img-height: 35vh;
+  padding-bottom: var(--extra-padding);
   color: var(--theme-color);
 }
 .project_img {
@@ -86,6 +93,11 @@
 .project_details h2 {
   font-size: 1.5rem;
   font-weight: 600;
+  margin-right: 0.5rem;
+}
+.project_details a {
+  display: flex;
+  align-items: center;
 }
 .project_details h3 {
   margin-top: 0.2rem;
@@ -98,13 +110,30 @@
   font-size: 1rem;
   font-weight: 400;
 }
+.project_container h4 {
+  margin-bottom: 0.5rem;
+}
 .tech_stack {
   display: flex;
   flex-direction: column;
 }
-.tech_stack h4 {
-  margin-bottom: 0.5rem;
-}
-.tech_stack svg {
+.project_container svg {
   margin-right: 0.5rem;
+}
+.project_links {
+  margin-top: 0.5rem;
+}
+.project_links div {
+  display: flex;
+}
+.project_links a {
+  display: flex;
+  align-items: center;
+}
+.project_links span {
+  margin-right: 0.5rem;
+}
+.project_links a:hover {
+  color: var(--blue);
+  text-decoration: underline;
 }

@@ -8,6 +8,7 @@
   --fsz-2: 1.25rem;
   --fsz-3: 1.563rem;
   --fsz-4: 2.441rem;
+  --extra-padding: 5rem;
 }
 * {
   box-sizing: border-box;
@@ -35,12 +36,17 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 figure {
   margin: 0;
 }
 .d-flex {
   display: flex;
+}
+.text-center {
+  text-align: center;
 }
 .icon {
   font-size: 1.25rem;
@@ -71,16 +77,10 @@ figure {
   color: var(--theme-color);
 }
 .container {
-  margin: 0.5rem;
+  margin: 1rem;
 }
 .extra_margin {
   margin-left: 1rem;
-}
-.wrapper {
-  margin: auto;
-  display: grid;
-  place-content: center;
-  height: 70vh;
 }
 .centered {
   display: flex;

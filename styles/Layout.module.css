@@ -11,18 +11,16 @@
 }
 
 .navbar {
-  --nav-height: 3.125rem;
-  background-color: var(--purple);
-  margin: auto auto 1rem;
+  --nav-height: 5rem;
   height: var(--nav-height);
-  width: 95vw;
+  width: 100vw;
+  background-color: #000;
   position: fixed;
   bottom: 0%;
   left: 0;
   right: 0;
   display: grid;
   place-content: center;
-  border-radius: var(--nav-height);
 }
 .menu {
   display: flex;
