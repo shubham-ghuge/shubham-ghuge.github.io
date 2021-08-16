@@ -1,3 +1,15 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.header li {
+  margin-right: 0.5rem;
+}
+
 .navbar {
   --nav-height: 3.125rem;
   background-color: var(--purple);
@@ -31,10 +43,9 @@
 .menu_items span {
   display: none;
 }
-.icon {
-  font-size: 1.25rem !important;
+
+.icon_nav {
   margin-inline: 0.5rem;
-  color: var(--grey);
 }
 
 @media (min-width: 640px) {

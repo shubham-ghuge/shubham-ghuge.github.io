@@ -43,7 +43,12 @@ figure {
   display: flex;
 }
 .icon {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--grey);
+  transition: all 0.3s;
+}
+.icon:hover {
+  color: var(--blue);
 }
 .active::before {
   content: "";
@@ -67,6 +72,15 @@ figure {
 }
 .container {
   margin: 0.5rem;
+}
+.extra_margin {
+  margin-left: 1rem;
+}
+.wrapper {
+  margin: auto;
+  display: grid;
+  place-content: center;
+  height: 70vh;
 }
 .centered {
   display: flex;

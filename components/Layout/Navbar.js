@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { Code, Home, Mail, Pen, Zap } from "./icons";
-import styles from "../styles/Navbar.module.css";
+import { FiCode, FiHome, FiMail, FiZap } from "react-icons/fi";
+import { BsPen } from "react-icons/bs";
+import styles from "../../styles/Layout.module.css";
 import { useRouter } from "next/dist/client/router";
+
 function Navbar() {
     const { pathname } = useRouter();
     return (
@@ -13,17 +15,17 @@ function Navbar() {
                             <span>
                                 Home
                             </span>
-                            <Home className={`${styles.icon} icon`} />
+                            <FiHome className={`${styles.icon_nav} icon`} />
                         </a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/projects">
-                        <a title="Projects" className={`${styles.menu_items} ${pathname === "/projects" ? "active" : ""}`}>
+                        <a title="Projects" className={`${styles.menu_items} ${/projects\/*/.test(pathname) ? "active" : ""}`}>
                             <span>
                                 Projects
                             </span>
-                            <Code className={`${styles.icon} icon`} />
+                            <FiCode className={`${styles.icon_nav} icon`} />
                         </a>
                     </Link>
                 </li>
@@ -33,7 +35,7 @@ function Navbar() {
                             <span>
                                 skills
                             </span>
-                            <Zap className={`${styles.icon} icon`} />
+                            <FiZap className={`${styles.icon_nav} icon`} />
                         </a>
                     </Link>
                 </li>
@@ -42,7 +44,7 @@ function Navbar() {
                         <span>
                             Blogs
                         </span>
-                        <Pen className={`${styles.icon} icon`} />
+                        <BsPen className={`${styles.icon_nav} icon`} />
                     </a>
                 </li>
                 <li>
@@ -51,7 +53,7 @@ function Navbar() {
                             <span>
                                 contact
                             </span>
-                            <Mail className={`${styles.icon} icon`} />
+                            <FiMail className={`${styles.icon_nav} icon`} />
                         </a>
                     </Link>
                 </li>

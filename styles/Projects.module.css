@@ -1,12 +1,3 @@
-.extra_margin {
-  margin-left: 1rem;
-}
-.wrapper {
-  margin: auto;
-  display: grid;
-  place-content: center;
-  height: 70vh;
-}
 .card_container {
   color: var(--theme-color);
   display: flex;
@@ -17,7 +8,6 @@
   margin: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  cursor: pointer;
   background-color: #0e1a2d;
 }
 .card figure {
@@ -59,10 +49,62 @@
   color: var(--grey);
   display: flex;
 }
+.links a:hover {
+  text-decoration: underline;
+}
 .links a:last-child {
   margin-left: 0.5rem;
 }
 .links svg {
+  align-self: center;
   margin-left: 0.2rem;
   font-size: 1rem;
+}
+.project_container {
+  --logo-height: 50px;
+  --img-height: 35vh;
+  color: var(--theme-color);
+}
+.project_img {
+  position: relative;
+  height: var(--img-height);
+}
+.project_img img {
+  border-radius: 0.5rem;
+}
+.project_logo {
+  height: var(--logo-height);
+  width: var(--logo-height);
+  position: relative;
+}
+.project_heading {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project_details h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.project_details h3 {
+  margin-top: 0.2rem;
+  font-weight: 600;
+  font-size: var(--fsz-1);
+  color: var(--blue);
+}
+.project_container p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.tech_stack {
+  display: flex;
+  flex-direction: column;
+}
+.tech_stack h4 {
+  margin-bottom: 0.5rem;
+}
+.tech_stack svg {
+  margin-right: 0.5rem;
 }
