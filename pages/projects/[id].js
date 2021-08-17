@@ -22,13 +22,11 @@ export async function getStaticProps({ params }) {
     }
 }
 export default function ProjectDetails({ project }) {
-    const { title, subTitle, img, logo, description, techStack, frontEnd, backEnd, live } = project;
+    const { title = "", subTitle = "", img = "", logo = "", description = "", techStack = [], frontEnd = "", live = "", backEnd = "" } = project || {};
     const icons = [SiMongodb, SiJavascript, SiReactrouter, SiTypescript, SiReact, SiNodeDotJs, SiRedux, SiHtml5, SiCss3, IoLogoSass];
     return (
         <>
-            <Head>
-                <title>{project.title}</title>
-            </Head>
+
             <main className="container">
                 <div className={styles.project_container}>
                     <div className={styles.project_img}>
