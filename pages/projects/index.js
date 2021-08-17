@@ -11,7 +11,7 @@ export async function getStaticProps() {
     })
 }
 
-export default function Projects({ projectData }) {
+function Projects({ projectData }) {
     return (
         <>
             <Head>
@@ -21,16 +21,15 @@ export default function Projects({ projectData }) {
                 <h1 className="heading text-center">Projects</h1>
                 <div className={styles.wrapper}>
                     <ul className={styles.card_container}>
-                        {
-                            projectData.map(project => (
-                                <li key={project.id} className={styles.card}>
-                                    <Card title={project.title} subTitle={project.subTitle} id={project.id} liveLink={project.live} logo={project.logo} />
-                                </li>
-                            ))
-                        }
+                        {projectData.map(project => (
+                            <li key={project.id} className={styles.card}>
+                                <Card title={project.title} subTitle={project.subTitle} id={project.id} liveLink={project.live} logo={project.logo} />
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </main>
         </>
     )
 }
+export default Projects;

@@ -41,21 +41,6 @@
   color: var(--grey);
   margin-bottom: 1rem;
 }
-.intro_text button {
-  border-radius: 0.2rem;
-  background-color: black;
-  color: var(--theme-color);
-  font-family: Inter, sans-serif;
-  padding: 0.5em 1.5em;
-  transition: all 300ms;
-  position: relative;
-  border: 0.125rem solid var(--blue);
-}
-.intro_text button:hover {
-  background-color: var(--blue);
-  font-weight: 500;
-  transform: scale(1.05);
-}
 
 @media (min-width: 640px) {
 }

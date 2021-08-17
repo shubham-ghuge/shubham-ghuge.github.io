@@ -14,11 +14,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  width: 80px;
-}
-.card:nth-child(3n) {
-  margin-right: unset;
+  height: 10vh;
+  width: 10vh;
 }
 .card svg {
   color: var(--blue);

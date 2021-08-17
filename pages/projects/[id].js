@@ -10,7 +10,7 @@ import { SiMongodb, SiJavascript, SiTypescript, SiReact, SiReactrouter, SiNodeDo
 
 export async function getStaticPaths() {
     const paths = data.map(project => ({ params: { id: project.id.toString() } }))
-    return { paths, fallback: true }
+    return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
@@ -22,7 +22,7 @@ export async function getStaticProps({ params }) {
     }
 }
 export default function ProjectDetails({ project }) {
-    const { title = "", subTitle = "", img = "", logo = "", description = "", techStack = [], frontEnd = "", live = "", backEnd = "" } = project || {};
+    const { title, subTitle, img, logo, description, techStack, frontEnd, live, backEnd } = project;
     const icons = [SiMongodb, SiJavascript, SiReactrouter, SiTypescript, SiReact, SiNodeDotJs, SiRedux, SiHtml5, SiCss3, IoLogoSass];
     return (
         <>

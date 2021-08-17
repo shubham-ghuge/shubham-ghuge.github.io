@@ -22,7 +22,7 @@ export default function Contact() {
                         <input type="text" id="" required />
                         <label htmlFor="name">Message</label>
                     </div>
-                    <button>Send<FiSend/></button>
+                    <button className="btn-primary">Send<FiSend/></button>
                 </form>
             </main>
         </>
