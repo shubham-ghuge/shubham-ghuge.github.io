@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
 :root {
   --black: #040408;
   --theme-color: #ffffff;
@@ -60,13 +62,10 @@ figure {
   content: "";
   display: block;
   height: 5px;
-  width: 80%;
+  width: 50%;
   position: absolute;
+  bottom: -50%;
   border-radius: 0.2rem 0.2rem 0 0;
-  bottom: -70%;
-  left: 0%;
-  right: 0%;
-  margin-inline: auto;
   background-color: var(--blue);
 }
 .active .icon {
@@ -75,6 +74,11 @@ figure {
 .heading {
   font-size: var(--fsz-3);
   color: var(--theme-color);
+}
+.sub-heading {
+  font-size: var(--fsz-2);
+  font-family: "Shadows Into Light", cursive;
+  color: var(--grey);
 }
 .container {
   margin: 1rem;

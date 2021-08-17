@@ -8,8 +8,9 @@ export default function Contact() {
             <Head>
                 <title>Skills</title>
             </Head>
-            <main className="container">
-                <h1 className="heading text-center">Skills</h1>
+            <main className="container text-center">
+                <h1 className="heading">Skills</h1>
+                <h2 className="sub-heading">I&apos;ve hands on experience working with this tech.</h2>
                 <div className={styles.skill_container}>
                     {
                         frontEnd.map((i, idx) => {

@@ -28,7 +28,7 @@
   align-items: center;
 }
 .menu_items {
-  margin: 0 .7rem;
+  margin: 0 0.7rem;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -38,13 +38,9 @@
   font-size: 0.9rem;
   color: var(--theme-color);
 }
-.menu_items svg{
-  font-size: var(--fsz-3);
-}
 .menu_items span {
   display: none;
 }
-
 .icon_nav {
   margin-inline: 0.5rem;
 }

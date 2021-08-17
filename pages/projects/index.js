@@ -1,4 +1,4 @@
-import data from "../../data/projects.json";
+import data from "../../data/projects";
 import styles from "../../styles/Projects.module.css";
 import Head from "next/head";
 import { Card } from "../../components/Card";
@@ -17,8 +17,9 @@ function Projects({ projectData }) {
             <Head>
                 <title>Projects</title>
             </Head>
-            <main className="container">
-                <h1 className="heading text-center">Projects</h1>
+            <main className="container text-center">
+                <h1 className="heading">Projects</h1>
+                <h2 className="sub-heading">Some of the best things, i&apos;ve built so far.</h2>
                 <div className={styles.wrapper}>
                     <ul className={styles.card_container}>
                         {projectData.map(project => (

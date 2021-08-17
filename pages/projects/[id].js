@@ -1,5 +1,5 @@
 import Head from "next/head";
-import data from "../../data/projects.json";
+import data from "../../data/projects";
 import Image from "next/image";
 import styles from "../../styles/Projects.module.css";
 import Link from "next/link";

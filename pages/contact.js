@@ -7,8 +7,9 @@ export default function Contact() {
             <Head>
                 <title>Contact</title>
             </Head>
-            <main className="container">
-                <h1 className="heading text-center">Contact Me</h1>
+            <main className="container text-center">
+                <h1 className="heading ">Contact Me</h1>
+                <h2 className="sub-heading">I love reading your mails.</h2>
                 <form className={styles.container}>
                     <div className={styles.input}>
                         <input type="text" id="name" required />
@@ -22,7 +23,7 @@ export default function Contact() {
                         <input type="text" id="" required />
                         <label htmlFor="name">Message</label>
                     </div>
-                    <button className="btn-primary">Send<FiSend/></button>
+                    <button className="btn-primary">Send<FiSend /></button>
                 </form>
             </main>
         </>
