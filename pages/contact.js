@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { FiSend } from "react-icons/fi";
+import styles from "../styles/Contact.module.css";
 export default function Contact() {
     return (
         <>
@@ -7,11 +9,20 @@ export default function Contact() {
             </Head>
             <main className="container">
                 <h1 className="heading text-center">Contact Me</h1>
-                <form>
-                    <input type="text" placeholder="john doe" name="" id="" />
-                    <input type="email" placeholder="john@gmail.com" id="" />
-                    <textarea placeholder="fill free " id="" cols="30" rows="10"></textarea>
-                    <button className="btn-primary">Submit</button>
+                <form className={styles.container}>
+                    <div className={styles.input}>
+                        <input type="text" id="name" required />
+                        <label htmlFor="name">Enter Full Name</label>
+                    </div>
+                    <div className={styles.input}>
+                        <input type="email" id="email" required />
+                        <label htmlFor="email">Enter Email</label>
+                    </div>
+                    <div className={styles.input}>
+                        <input type="text" id="" required />
+                        <label htmlFor="name">Message</label>
+                    </div>
+                    <button>Send<FiSend/></button>
                 </form>
             </main>
         </>

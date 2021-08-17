@@ -1,0 +1,79 @@
+.container {
+  height: 70vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.container :is(input, textarea) {
+  background-color: transparent;
+  margin-bottom: 1rem;
+  border: 2px solid var(--blue);
+  box-sizing: border-box;
+  font-family: "Inter";
+  color: #fff;
+  border-radius: 0.25rem;
+}
+.input {
+  position: relative;
+  background-color: #1b1f26;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  height: 45px;
+  transition: all 0.3s ease-in;
+  margin-bottom: 1rem;
+}
+.input input {
+  z-index: 1;
+  font-weight: 500;
+  color: #b8bfcc;
+  padding: 1rem 0.5rem 0.5rem;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+.input label {
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  padding-left: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #525966;
+}
+.input:focus-within label {
+  color: #8b919c;
+  top: 25%;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.input input:valid ~ label {
+  top: 25%;
+  font-size: 11px;
+}
+.input input:focus {
+  outline: 0;
+}
+.container button {
+  background-color: var(--blue);
+  border: 0;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 0;
+  border-radius: 0.25rem;
+}
+.container button svg {
+  color: #fff;
+  margin-left: 0.5rem;
+  font-size: var(--fsz-2);
+}
