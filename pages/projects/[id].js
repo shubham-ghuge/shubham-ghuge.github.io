@@ -1,5 +1,4 @@
 import Head from "next/head";
-import data from "../../data/projects";
 import Image from "next/image";
 import styles from "../../styles/Projects.module.css";
 import Link from "next/link";
@@ -9,11 +8,13 @@ import { IoLogoSass } from "react-icons/io5";
 import { SiMongodb, SiJavascript, SiTypescript, SiReact, SiReactrouter, SiNodeDotJs, SiRedux, SiHtml5, SiCss3 } from "react-icons/si";
 
 export async function getStaticPaths() {
+    const data = (await import("../../data/projects")).default;
     const paths = data.map(project => ({ params: { id: project.id.toString() } }))
     return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
+    const data = (await import("../../data/projects")).default;
     const projectData = data.filter(project => project.id.toString() === params.id);
     return {
         props: {

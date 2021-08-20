@@ -1,9 +1,9 @@
-import data from "../../data/projects";
 import styles from "../../styles/Projects.module.css";
 import Head from "next/head";
 import { Card } from "../../components/Card";
 
 export async function getStaticProps() {
+    const data = (await import("../../data/projects")).default;
     return ({
         props: {
             projectData: data

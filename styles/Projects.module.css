@@ -9,7 +9,7 @@
   overflow-y: scroll;
 }
 .card {
-  --card-height: 20vh;
+  --icon: 20vh;
   margin-right: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -25,9 +25,9 @@
 .thumbnail {
   align-self: center;
   position: relative;
-  height: var(--card-height);
+  height: var(--icon);
   border-radius: 50%;
-  width: var(--card-height);
+  width: var(--icon);
 }
 .thumbnail img {
   border-radius: 50%;
@@ -135,4 +135,26 @@
 .project_links a:hover {
   color: var(--blue);
   text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    padding-bottom: 5rem;
+  }
+  .card_container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    --icon: 10vh;
+    margin: 1rem;
+  }
+  .card figure {
+    height: 20vh;
+    width: 30vw;
+  }
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
 }
