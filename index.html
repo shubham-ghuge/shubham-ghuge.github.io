@@ -1,106 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="title" content="shubham ghuge | Web Developer">
-    <meta name="description" content="CS Undergrad who is currently living in india, I enjoy making responsive and good looking websites.If you want to build one feel free to reach out to me.">
-    <title>Shubham Ghuge | Web Developer</title>
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shubham-ghuge.github.io/">
-    <meta property="og:title" content="shubham ghuge | Web Developer">
-    <meta property="og:description" content="CS Undergrad and a web developer who is currently living in india, I enjoy making responsive and good looking websites.If you want to build one feel free to reach out to me.">
-    <meta property="og:image" content="./assets/img/profile.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://shubham-ghuge.github.io/">
-    <meta property="twitter:title" content="shubham ghuge | Web Developer">
-    <meta property="twitter:description" content="CS Undergrad and a web developer who is currently living in india, I enjoy making responsive and good looking websites.If you want to build one feel free to reach out to me.">
-    <meta property="twitter:image" content="./assets/img/profile.png">
-    <meta name="Keywords"
-        content="shubham ghuge,shubham subhash ghuge,shubham-ghuge,shubham-ghuge github.io,shubham ghuge portfolio,web developer portfolio,freelancer,freelancer portfolio,web devlopment portfolio,indian web developer,cs undergaduate,mumbai web developer">
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- preprocessing -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preload" href="./assets/img/profile.png" as="image" media="(min-width: 900px)">
-    <!-- fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
       rel="stylesheet"
     />
-    <!-- cdns -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- style sheets -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Shubham Ghuge</title>
   </head>
-  <body onload="loader()">
-    <div class="loader" id="loader">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <header  id="navbar">
-      <img src="./assets/img/temp-memoji.png" alt="user emoji" />
-      <ul class="d-none header-nav">
-        <li>
-          <a href="./index.html" class="nav-link"><i class='bx bxs-home-heart active'></i>Home</a>
-        </li>
-        <li>
-          <a href="./projects.html" class="nav-link"><i class='bx bx-rocket' ></i>projects</a>
-        </li>
-        <li>
-          <a href="./contact.html" class="nav-link"><i class='bx bx-user-plus' ></i>contact</a>
-        </li>
-        <li>
-          <a href="./blogs.html" class="nav-link"><i class='bx bx-pen' ></i>blogs</a>
-        </li>
-      </ul>
-      <ul class="d-show">
-        <li>
-          <a id="profile-link" href="https://www.twitter.com/_shubham_ghuge_">
-            <img src="./assets/img/icons/icons8-twitter.svg"  alt="twitter">
-          </a>
-        </li>
-      </ul>
-    </header>
-    <main class="home" >
-      <section class="intro" id="welcome-section">
-        <h3>
-          hey👋, I am
-        </h3>
-        <h1>Shubham ghuge.</h1>
-        <h2>
-          CS Undergrad living in india, I enjoy making responsive and good looking websites.
-          if you love my work feel free to reach out to me!
-        </h2>
-      <button class="cta" onclick="window.location.href='contact.html'" href="./contact.html">get in touch</button>
-      </section>
-      <section class="img-wrap">
-        <img
-          class="portfolio-img"
-          src="./assets/img/profile.png"
-          alt="shubham ghuge image"
-        />
-      </section>
-    </main>
-    <!-- scripts -->
-    <nav>
-      <ul>
-        <li>
-          <a href="#" class="active"><i class='bx bxs-home-heart'></i>Home</a>
-        </li>
-        <li>
-          <a href="./projects.html"><i class='bx bx-rocket' ></i>projects</a>
-        </li>
-        <li>
-          <a href="./contact.html"><i class='bx bx-user-plus' ></i>contact</a>
-        </li>
-        <li>
-          <a href="./blogs.html"><i class='bx bx-pen' ></i>blogs</a>
-        </li>
-      </ul>
-    </nav>
-    <script src="./assets/js/app.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
