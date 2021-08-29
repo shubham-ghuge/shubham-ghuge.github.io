@@ -13,7 +13,7 @@ function App() {
   const { theme } = useThemeContext();
   return (
     <main className={theme ? "light" : "dark"}>
-      <section className="bg-white dark:bg-black text-gray-900 dark:text-blue-700 h-screen">
+      <section className="bg-white dark:bg-black text-gray-800 dark:text-gray-400 h-screen">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

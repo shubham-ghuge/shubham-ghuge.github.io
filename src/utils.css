@@ -1,3 +1,15 @@
+* {
+  font-family: "Inter", sans-serif;
+}
 .icon {
-  @apply text-2xl ml-2;
+  @apply text-xl md:text-2xl ml-2;
+}
+.active {
+  @apply text-indigo-600;
+}
+.btn-primary {
+  @apply px-5 py-2 font-semibold rounded bg-indigo-700 text-white focus:outline-none ring-4 ring-indigo-600 ring-opacity-50;
+}
+a{
+  @apply hover:text-indigo-600;
 }
