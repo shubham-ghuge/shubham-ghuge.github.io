@@ -36,7 +36,7 @@ function Header() {
             <FiInstagram className="icon" />
           </a>
         </li>
-        <li>
+        <li className="mr-4">
           <a
             href="https://www.github.com/shubham-ghuge"
             target="_blank"

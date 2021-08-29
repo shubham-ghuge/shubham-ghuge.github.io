@@ -14,13 +14,7 @@ function Projects() {
         <ul className="flex overflow-scroll">
           {projectData.map((project) => (
             <li key={project.id}>
-              <Card
-                title={project.title}
-                subTitle={project.subTitle}
-                id={project.id}
-                liveLink={project.live}
-                logo={project.logo}
-              />
+              <Card details={project} />
             </li>
           ))}
         </ul>

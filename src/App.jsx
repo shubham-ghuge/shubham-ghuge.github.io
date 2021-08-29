@@ -8,6 +8,7 @@ import { Navbar } from "./components/Navbar";
 import { Header } from "./components/Header";
 import "./utils.css";
 import { useThemeContext } from "./contexts/themeProvider";
+import { Details } from "./pages/projects/Details";
 
 function App() {
   const { theme } = useThemeContext();
@@ -19,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<Home />} />
+          <Route path="/projects/:id" element={<Details />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Navbar />

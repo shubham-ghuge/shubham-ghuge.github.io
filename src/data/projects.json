@@ -5,7 +5,7 @@
     "subTitle": "Ecommerce App",
     "img": "/projects/1.png",
     "logo": "/projects/logo/1.svg",
-    "description": "Farmer's Grocery is a platform where users can get fresh groceries directly from the farm. It contains features for end users such as order & address management, payment integration, wishlist and cart.",
+    "description": "It is an ecommerce platform where users can get fresh groceries directly from the farm. It contains features for end users such as order & address management, payment integration, wishlist and cart.",
     "techStack": [
       "SiReact",
       "SiRedux",
@@ -46,7 +46,7 @@
     "subTitle": "Quiz App",
     "img": "/projects/3.png",
     "logo": "/projects/logo/3.svg",
-    "description": "Real Farmer Quiz is a simple, fun and interactive web app to learn about agriculture.Users will get a certificate at the end of it, can download or share the link of certificates with friends.",
+    "description": "Real Farmer Quiz is a simple, fun and interactive web app to learn about agriculture. Users will get a certificate at the end of it, can download or share the link of certificates with friends.",
     "techStack": [
       "SiReact",
       "SiTypescript",
