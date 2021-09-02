@@ -6,7 +6,7 @@ import { BsPen } from "react-icons/bs";
 
 function Navbar() {
   return (
-    <nav className="py-2 fixed bottom-5 inset-x-0 mx-auto w-4/5">
+    <nav className={styles.nav}>
       <ul className="flex justify-around">
         <li>
           <NavLink end to="/">

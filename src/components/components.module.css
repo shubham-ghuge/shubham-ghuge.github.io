@@ -1,3 +1,9 @@
-.navlink_text{
-    @apply hidden md:block;
+.nav {
+  @apply py-2 fixed bottom-5 inset-x-0 mx-auto w-4/5 sm:w-2/5;
+}
+.nav a{
+    @apply sm:flex;
+}
+.navlink_text {
+  @apply hidden sm:inline-block ml-2 sm:font-semibold;
 }

@@ -5,7 +5,7 @@ import { FiSend } from "react-icons/fi";
 
 function Contact() {
   return (
-    <>
+    <div className="sm:w-4/5 sm:mx-auto">
       <Title heading="contact" subHeading="I love reading your mails <3" />
       <form className="flex flex-col justify-center mx-4 h-3/5">
         <div className={styles.input_field}>
@@ -30,7 +30,7 @@ function Contact() {
           Send <FiSend className="text-xl ml-2" />
         </button>
       </form>
-    </>
+    </div>
   );
 }
 export { Contact };
