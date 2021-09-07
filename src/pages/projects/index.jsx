@@ -5,13 +5,13 @@ import { Card } from "./components";
 
 function Projects() {
   return (
-    <section className="mt-4 sm:w-4/6 sm:mx-auto">
+    <section className="container">
       <Title
         heading="projects"
-        subHeading="Some of the best things, I've built so far,"
+        subHeading="Some of the best things, I've built so far 🚀"
       />
-      <div className="mt-14 sm:mt-6">
-        <ul className="flex overflow-scroll sm:flex-wrap sm:overflow-hidden">
+      <div className="mt-14 md:mt-6">
+        <ul className="flex overflow-scroll md:flex-wrap md:justify-start md:overflow-hidden">
           {projectData.map((project) => (
             <li key={project.id}>
               <Card details={project} />

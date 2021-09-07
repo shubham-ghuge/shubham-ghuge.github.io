@@ -7,7 +7,7 @@ import { BsPen } from "react-icons/bs";
 function Navbar() {
   return (
     <nav className={styles.nav}>
-      <ul className="flex justify-around">
+      <ul className="flex justify-around md:flex-col md:justify-center">
         <li>
           <NavLink end to="/">
             <FiHome className="icon" />

@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from "react-icons/fi";
+import styles from "./components.module.css";
 // import { useThemeContext } from "../contexts/themeProvider";
 // import { HiSun, HiOutlineSun } from "react-icons/hi";
 import { BsFileEarmarkArrowDown } from "react-icons/bs";
@@ -7,7 +8,7 @@ import { BsFileEarmarkArrowDown } from "react-icons/bs";
 function Header() {
   // const { theme, setTheme } = useThemeContext();
   return (
-    <header>
+    <header className={styles.header}>
       <ul className="flex justify-end py-2">
         <li>
           <a

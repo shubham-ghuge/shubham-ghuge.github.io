@@ -5,9 +5,9 @@ import { FiSend } from "react-icons/fi";
 
 function Contact() {
   return (
-    <div className="sm:w-4/5 sm:mx-auto">
-      <Title heading="contact" subHeading="I love reading your mails <3" />
-      <form className="flex flex-col justify-center mx-4 h-3/5">
+    <div className="container">
+      <Title heading="contact" subHeading="I love reading your mails ❤️" />
+      <form className="flex flex-col w-5/6 justify-start mt-16">
         <div className={styles.input_field}>
           <label className={styles.label} htmlFor="name">
             Name
