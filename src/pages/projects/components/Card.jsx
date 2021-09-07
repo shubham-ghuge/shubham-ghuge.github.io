@@ -1,36 +1,30 @@
 import React from "react";
 import { BiLinkExternal, BiRightArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-function Card({ details }) {
+function Card({ details, setFuntion, layoutId }) {
   const { id, title, subTitle, live, logo } = details;
   return (
-    <figure className="w-72 sm:w-64 flex flex-col px-6 py-8 sm:px-4 sm:py-10 mx-4 sm:m-4 border-4 border-indigo-400 border-opacity-50 rounded-lg box-border">
-      <img src={logo} className="h-24 mx-auto mb-4 sm:h-12" alt={title} />
-      <figcaption className="flex flex-col items-center">
-        <h3 className="text-lg text-white font-semibold">{title}</h3>
-        <p className="text-md font-medium text-indigo-600">{subTitle}</p>
-        {/* <div className="flex">
-          <Link
-            to={"/projects/" + id}
-            className="flex items-center"
-            state={{ details }}
-          >
-            Details
-            <BiRightArrowAlt className="icon" />
-          </Link>
-          <a
-            href={live}
-            className="flex items-center ml-5"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Live
-            <BiLinkExternal className="icon" />
-          </a>
-        </div> */}
-      </figcaption>
-    </figure>
+    <motion.figure
+      className="w-72 md:w-64 flex flex-col px-6 py-8 bg-gray-900 rounded-lg box-border cursor-pointer md:px-4 md:py-10 mx-4 md:m-4 hover:bg-gray-800"
+      whileHover={{
+        scale: 1.1,
+        transition: { duration: 0.3 },
+      }}
+      onClick={() => setFuntion(id)}
+      layoutId={layoutId}
+    >
+      <img src={logo} className="h-24 mx-auto mb-4 md:h-16" alt={title} />
+      <motion.figcaption className="flex flex-col items-center">
+        <motion.h3 className="text-lg text-white font-semibold">
+          {title}
+        </motion.h3>
+        <motion.p className="text-md font-medium text-indigo-500">
+          {subTitle}
+        </motion.p>
+      </motion.figcaption>
+    </motion.figure>
   );
 }
 export { Card };

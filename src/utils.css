@@ -8,8 +8,8 @@
   @apply text-xl md:text-2xl hover:text-blue-600;
 }
 .active {
-  @apply relative text-blue-500;
+  @apply relative text-indigo-500;
 }
 .btn-primary {
-  @apply px-5 py-2 font-semibold rounded text-white focus:outline-none bg-gradient-to-r from-fuchsia-600 to-pink-600;
+  @apply px-5 py-2 font-semibold rounded text-white focus:outline-none bg-gradient-to-r from-indigo-700 to-blue-600 focus:ring-4 focus:ring-indigo-700 focus:ring-opacity-50;
 }
