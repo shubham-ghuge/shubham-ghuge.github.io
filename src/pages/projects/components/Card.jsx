@@ -20,7 +20,7 @@ function Card({ details, setFuntion, layoutId }) {
         <motion.h3 className="text-lg text-white font-semibold">
           {title}
         </motion.h3>
-        <motion.p className="text-md font-medium text-indigo-500">
+        <motion.p className="text-md font-medium text-indigo-600">
           {subTitle}
         </motion.p>
       </motion.figcaption>

@@ -9,7 +9,7 @@ function Header() {
   // const { theme, setTheme } = useThemeContext();
   return (
     <header className={styles.header}>
-      <ul className="flex justify-end py-2">
+      <ul className="flex justify-end py-2 w-full">
         <li>
           <a
             href="https://www.twitter.com/_shubham_ghuge_"

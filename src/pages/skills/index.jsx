@@ -29,22 +29,8 @@ function Skills() {
 
   return (
     <section className="container">
-      <Title heading="Skills" subHeading="Tech I've work with till now ✨," />
-      <motion.div
-        initial="hidden"
-        animate="show"
-        variants={{
-          hidden: { opacity: 0 },
-          show: {
-            opacity: 1,
-            transition: {
-              staggerChildren: 0.1,
-              delayChildren: 0.3,
-            },
-          },
-        }}
-        className="mx-auto my-4"
-      >
+      <Title heading="Skills" subHeading="Tech I've work with till now ✨" />
+      <div className={styles.container}>
         {Object.keys(data).map((j, idx) => (
           <button
             className={`capitalize focus:outline-none text-gray-50 text-xs rounded m-2 p-2 ring-2 ring-indigo-600 md:text-lg ${
@@ -56,16 +42,41 @@ function Skills() {
             {j.split("_").join(" ")}
           </button>
         ))}
-        <div className="flex mt-4 flex-wrap md:mt-8">
+        <motion.div
+          initial="hidden"
+          animate="show"
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 1,
+              },
+            },
+          }}
+          className="flex mt-4 mx-4 flex-wrap md:mx-0"
+        >
           {skillData &&
             skillData.map((i, idx) => {
               const Icon = i.icon;
               return (
                 <motion.div
+                  initial="hidden"
+                  animate="visible"
                   variants={{
-                    hidden: { scale: 0 },
-                    show: { scale: 1 },
+                    visible: {
+                      y: 0,
+                      scale: 1,
+                    },
+                    hidden: {
+                      y: 50,
+                      scale: 0,
+                    },
                   }}
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                  transition={{ duration: 0.3 }}
                   key={idx}
                   className={styles.card}
                 >
@@ -76,8 +87,8 @@ function Skills() {
                 </motion.div>
               );
             })}
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 }

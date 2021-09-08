@@ -1,5 +1,5 @@
 .header {
-  @apply pt-2 md:pt-4;
+  @apply fixed top-3 w-full;
 }
 .header li {
   @apply ml-4;
@@ -8,8 +8,5 @@
   @apply py-2 fixed bottom-5 inset-x-0 mx-auto w-4/5 md:w-16 md:h-screen md:flex md:left-5 md:mx-0;
 }
 .nav a {
-  @apply md:flex flex-col items-center md:flex-row md:mb-8;
-}
-.navlink_text {
-  @apply hidden mt-2 text-xs font-semibold;
+  @apply relative md:flex flex-col items-center md:flex-row md:mt-8;
 }

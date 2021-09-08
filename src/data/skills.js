@@ -1,6 +1,6 @@
 import { IoLogoSass } from "react-icons/io5";
-import { SiMongodb, SiJavascript, SiTypescript, SiReact, SiReactrouter, SiNodeDotJs, SiRedux, SiHtml5, SiCss3, SiNextDotJs, SiMysql, SiJsonwebtokens, SiWebpack, SiVisualstudiocode, SiNetlify, SiHeroku, SiPhp, SiJava, SiGithub, SiFigma, SiBootstrap, SiGit, SiJest, SiTailwindcss } from "react-icons/si";
-
+import { SiMongodb, SiJavascript, SiTypescript, SiPostman, SiUbuntu, SiReact, SiReactrouter, SiNodeDotJs, SiRedux, SiHtml5, SiCss3, SiNextDotJs, SiMysql, SiJsonwebtokens, SiWebpack, SiVisualstudiocode, SiNetlify, SiHeroku, SiPhp, SiJava, SiGithub, SiFigma, SiBootstrap, SiGit, SiJest, SiTailwindcss } from "react-icons/si";
+import { ViteIcon } from "../components/ViteIcon";
 class skillData {
     constructor(name, icon) {
         this.name = name;
@@ -32,15 +32,16 @@ const js = new skillData("javascript", SiJavascript);
 const ts = new skillData("typescript", SiTypescript);
 const php = new skillData("php", SiPhp);
 const java = new skillData("java", SiJava);
-const tail = new skillData("Tailwind", SiTailwindcss)
+const tail = new skillData("Tailwind", SiTailwindcss);
+const vite = new skillData("Vite", ViteIcon);
+const postman = new skillData("Postman", SiPostman);
+const ubuntu = new skillData("Ubuntu", SiUbuntu)
 
 export const data = {
-    front_end: [react, next, redux, router, html, css, sass,],
+    front_end: [react, next, redux, router, webpack, vite, html, css, sass,],
+    back_end: [mongo, sql, node, jwt],
     design: [bs, tail, figma],
-    back_end: [mongo, sql, node,],
     languages: [js, ts, php, java],
-    tooling: [netlify, heroku, webpack,],
-    version_control: [git, github,],
     testing: [jest,],
-    developer_tools: [vscode,],
+    developer_tools: [git, github, postman, ubuntu, vscode, netlify, heroku],
 }

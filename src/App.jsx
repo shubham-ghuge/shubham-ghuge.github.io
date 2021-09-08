@@ -13,8 +13,8 @@ import { Details } from "./pages/projects/Details";
 function App() {
   const { theme } = useThemeContext();
   return (
-    <main className={theme ? "light" : "dark"}>
-      <section className="bg-white dark:bg-black text-gray-800 dark:text-gray-400 h-screen">
+    <section className={theme ? "light" : "dark"}>
+      <main className="bg-white dark:bg-black text-gray-800 dark:text-gray-400 h-screen md:flex items-center justify-center">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,8 +24,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Navbar />
-      </section>
-    </main>
+      </main>
+    </section>
   );
 }
 

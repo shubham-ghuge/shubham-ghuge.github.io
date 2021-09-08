@@ -11,19 +11,16 @@ function Navbar() {
         <li>
           <NavLink end to="/">
             <FiHome className="icon" />
-            <span className={styles.navlink_text}>Home</span>
           </NavLink>
         </li>
         <li>
           <NavLink to="/projects">
             <FiCode className="icon" />
-            <span className={styles.navlink_text}>Projects</span>{" "}
           </NavLink>
         </li>
         <li>
           <NavLink to="/skills">
             <FiZap className="icon" />
-            <span className={styles.navlink_text}>Skills</span>{" "}
           </NavLink>
         </li>
         <li>
@@ -33,13 +30,11 @@ function Navbar() {
             target="_blank"
           >
             <BsPen className="icon" />
-            <span className={styles.navlink_text}>Blogs</span>{" "}
           </a>
         </li>
         <li>
           <NavLink to="/contact">
             <FiMail className="icon" />
-            <span className={styles.navlink_text}>Contact</span>{" "}
           </NavLink>
         </li>
       </ul>

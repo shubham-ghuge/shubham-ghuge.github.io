@@ -12,7 +12,6 @@ function Projects() {
   useEffect(() => {
     if (selected) {
       const [currentProjectData] = projectData.filter((i) => i.id === selected);
-      console.log(currentProjectData);
       setProjectData(currentProjectData);
     }
     return () => setProjectData({});
@@ -40,8 +39,18 @@ function Projects() {
             {selected && (
               <motion.div
                 layoutId={selected}
-                className="z-10 fixed inset-0 top-0 bottom-0 bg-indigo-900 bg-opacity-80 flex flex-col justify-center items-center"
+                className="z-10 fixed px-2 inset-0 top-0 bottom-0 flex flex-col justify-center items-center"
               >
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={{
+                    visible: { opacity: 1 },
+                    hidden: { opacity: 0 },
+                  }}
+                  transition={{ delay: .3, duration: 0.5 }}
+                  className="bg-indigo-900 bg-opacity-80 absolute top-0 inset-0"
+                ></motion.div>
                 <motion.div className="relative z-1 bg-gray-900 rounded-lg pb-4 md:h-5/6 md:w-11/12">
                   <button
                     className="ml-auto block my-4 mr-4 p-2 bg-gray-800 text-gray-50 rounded"
