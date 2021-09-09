@@ -9,8 +9,8 @@ function Home() {
   return (
     <section className={styles.container}>
       <picture >
-        <source srcset="/final.webp" type="image/webp" />
-        <source srcset="/final.png" type="image/png" />
+        <source srcSet="/final.webp" type="image/webp" />
+        <source srcSet="/final.png" type="image/png" />
         <img src="/final.png" alt="shubham ghuge" className="h-72 md:h-96 md:ml-24"/>
       </picture>
       <div className="text-center flex flex-col items-center justify-center mx-4 md:items-start md:text-left md:w-2/5">
