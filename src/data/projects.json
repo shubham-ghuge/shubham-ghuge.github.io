@@ -107,7 +107,7 @@
     "subTitle": "Component Library",
     "img": "/projects/6.png",
     "logo": "/projects/logo/6.svg",
-    "description": "This is a component library made with SASS. some of the class titles are inspired from emmet.",
+    "description": "cssStack is a component library made with SASS which contains utility classes and styles for components like Alert, Navbar etc.",
     "techStack": ["SiHtml5", "IoLogoSass", "SiJavascript"],
     "live": "https://cssstack.netlify.app/",
     "frontEnd": "https://github.com/shubham-ghuge/component-library/tree/development"

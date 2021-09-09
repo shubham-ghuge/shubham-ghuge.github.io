@@ -1,12 +1,8 @@
 import React from "react";
 import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from "react-icons/fi";
 import styles from "./components.module.css";
-// import { useThemeContext } from "../contexts/themeProvider";
-// import { HiSun, HiOutlineSun } from "react-icons/hi";
-import { BsFileEarmarkArrowDown } from "react-icons/bs";
 
 function Header() {
-  // const { theme, setTheme } = useThemeContext();
   return (
     <header className={styles.header}>
       <ul className="flex justify-end py-2 w-full">
@@ -16,7 +12,7 @@ function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <FiTwitter className="icon" />
+            <FiTwitter className="icon" aria-label="twitter icon" />
           </a>
         </li>
         <li>
@@ -25,7 +21,7 @@ function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <FiLinkedin className="icon" />
+            <FiLinkedin className="icon" aria-label="linkedin icon" />
           </a>
         </li>
         <li>
@@ -34,7 +30,7 @@ function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <FiInstagram className="icon" />
+            <FiInstagram className="icon" aria-label="instagram icon" />
           </a>
         </li>
         <li className="mr-4">
@@ -43,18 +39,9 @@ function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <FiGithub className="icon" />
+            <FiGithub className="icon" aria-label="github icon" />
           </a>
         </li>
-        {/* <li>
-          <button onClick={() => setTheme((curr) => !curr)}>
-            {theme ? (
-              <HiOutlineSun className="icon" />
-            ) : (
-              <HiSun className="icon" />
-            )}
-          </button>
-        </li> */}
       </ul>
     </header>
   );

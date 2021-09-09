@@ -10,7 +10,9 @@ function Title({ heading, subHeading }) {
         </span>
         {heading}
       </h1>
-      <h2 className="ml-8 md:mb-8 text-lg font-medium">{subHeading}</h2>
+      <h2 className="ml-8 md:mb-8 text-lg font-medium" tabIndex="1">
+        {subHeading}
+      </h2>
     </>
   );
 }

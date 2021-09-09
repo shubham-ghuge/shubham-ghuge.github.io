@@ -13,3 +13,6 @@
 .btn-primary {
   @apply px-5 py-2 font-semibold rounded text-white focus:outline-none bg-gradient-to-r from-indigo-700 to-fuchsia-600 focus:ring-4 focus:ring-indigo-700 focus:ring-opacity-50;
 }
+:focus {
+  @apply ring-1 ring-indigo-600;
+}

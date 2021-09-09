@@ -61,6 +61,7 @@ function Skills() {
               const Icon = i.icon;
               return (
                 <motion.div
+                  tabIndex="0"
                   initial="hidden"
                   animate="visible"
                   variants={{
@@ -80,7 +81,10 @@ function Skills() {
                   key={idx}
                   className={styles.card}
                 >
-                  <Icon className="text-2xl text-indigo-600 md:text-3xl" />
+                  <Icon
+                    className="text-2xl text-indigo-600 md:text-3xl"
+                    aria-label={`${i.name} icon`}
+                  />
                   <p className="text-xs mt-2 capitalize font-normal text-gray-100 md:text-sm">
                     {i.name}
                   </p>

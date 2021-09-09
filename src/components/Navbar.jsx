@@ -8,33 +8,33 @@ function Navbar() {
   return (
     <nav className={styles.nav}>
       <ul className="flex justify-around md:flex-col md:justify-center">
-        <li>
+        <li title="home">
           <NavLink end to="/">
-            <FiHome className="icon" />
+            <FiHome className="icon" aria-label="home icon" />
           </NavLink>
         </li>
-        <li>
+        <li title="projects">
           <NavLink to="/projects">
-            <FiCode className="icon" />
+            <FiCode className="icon" aria-label="code icon" />
           </NavLink>
         </li>
-        <li>
+        <li title="skills">
           <NavLink to="/skills">
             <FiZap className="icon" />
           </NavLink>
         </li>
-        <li>
+        <li title="blogs">
           <a
             href="https://shubham-ghuge.hashnode.dev"
             rel="noreferrer"
             target="_blank"
           >
-            <BsPen className="icon" />
+            <BsPen className="icon" aria-label="pen icon" />
           </a>
         </li>
-        <li>
+        <li title="contact">
           <NavLink to="/contact">
-            <FiMail className="icon" />
+            <FiMail className="icon" aria-label="mail icon" />
           </NavLink>
         </li>
       </ul>

@@ -55,13 +55,20 @@ function Contact() {
           <label className={styles.label} htmlFor="name">
             Name
           </label>
-          <input placeholder="Tony Stark" type="text" name="name" required />
+          <input
+            id="name"
+            placeholder="Tony Stark"
+            type="text"
+            name="name"
+            required
+          />
         </div>
         <div className={styles.input_field}>
           <label className={styles.label} htmlFor="email">
             Email
           </label>
           <input
+            id="email"
             name="email"
             type="email"
             placeholder="tony@avengers.com"
@@ -73,6 +80,7 @@ function Contact() {
             Message
           </label>
           <textarea
+            id="message"
             name="message"
             type="text"
             style={{ height: "5rem" }}
@@ -80,9 +88,12 @@ function Contact() {
             required
           ></textarea>
         </div>
-        <button className="btn-primary flex justify-center items-center ai-center mt-4">
+        <button
+          type="submit"
+          className="btn-primary flex justify-center items-center ai-center mt-4"
+        >
           {isLoading ? (
-            "loading..."
+            "sending..."
           ) : (
             <>
               Send <AiOutlineSend className="text-xl ml-2" />
