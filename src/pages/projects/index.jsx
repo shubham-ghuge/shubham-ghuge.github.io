@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Title } from "../../components/Title";
-import projectData from "../../data/projects.json";
+import projectData from "../../data/projects.js";
 import { Card } from "./components";
 import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
 import { Details } from "./Details";
