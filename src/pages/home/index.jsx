@@ -29,11 +29,11 @@ function Home() {
           UI&apos;s.
         </p>
         <button
-          aria-label="Go to contact page"
+          aria-label="See My Projects"
           className="btn-primary flex items-center"
-          onClick={() => navigate("/contact")}
+          onClick={() => navigate("/projects")}
         >
-          <span>Reach out to me</span>
+          <span>See My Projects</span>
           <FiArrowRight className="text-xl ml-2" />
         </button>
       </div>
