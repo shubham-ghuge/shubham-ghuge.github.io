@@ -27,7 +27,7 @@ function Projects() {
         heading="projects"
         subHeading="Some of the best things, I've built so far 🚀"
       />
-      <div className="mt-14 md:mt-6">
+      <div className="h-full flex items-center md:mt-6">
         <AnimateSharedLayout type="crossfade">
           <ul className="flex overflow-scroll md:pl-4 md:flex-wrap md:justify-start md:overflow-hidden">
             {projectData.map((project) => (
